@@ -3,4 +3,4 @@ Software-product tracking system
 
 
 # Server commands
-- Run server: npm run dev
+- `npm run dev` - Runs nodemon + server which watches the .ts files.
