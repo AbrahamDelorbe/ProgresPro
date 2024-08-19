@@ -9,7 +9,7 @@ Software-product tracking system
 - Frontend: Atomic design pattern
 - Backend: Repository pattern
 
-# Tech
+# Database
 - [PostgreSQL + node documentation](https://node-postgres.com/)
 
 
