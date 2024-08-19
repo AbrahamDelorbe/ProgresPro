@@ -10,6 +10,6 @@ Software-product tracking system
 - Backend: Repository pattern
 
 # Tech
-- [PostgreSQL + node](https://node-postgres.com/)
+- [PostgreSQL + node documentation](https://node-postgres.com/)
 
 
