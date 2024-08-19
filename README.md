@@ -6,8 +6,8 @@ Software-product tracking system
 - `npm run dev` - runs nodemon + server which watches the .ts files (basically start the server).
 
 # Patterns
-- Frontend: [Atomic design pattern] (https://rangle-io.gitbook.io/react-training/index-1/atomic_design)
-- Backend: [Repository pattern concept](https://4markdown.com/understanding-repository-pattern-in-nodejs-and-typescript/)
+- [Atomic design pattern] (https://rangle-io.gitbook.io/react-training/index-1/atomic_design)
+- [Repository pattern concept](https://4markdown.com/understanding-repository-pattern-in-nodejs-and-typescript/)
 
 # Database
 - [PostgreSQL + node documentation](https://node-postgres.com/)
