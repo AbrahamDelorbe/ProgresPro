@@ -11,5 +11,6 @@ Software-product tracking system
 
 # Database
 - [PostgreSQL + node documentation](https://node-postgres.com/)
+- [pg types](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pg)
 
 
