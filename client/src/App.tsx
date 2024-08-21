@@ -1,4 +1,4 @@
-import LoginPage from './pages/loginPage.js';
+import LoginPage from './pages/LoginPage.js';
 
 // Si el JSX no funciona en este archivo, intenta instalar:
 // npm install --save-dev @types/react @types/react-dom
