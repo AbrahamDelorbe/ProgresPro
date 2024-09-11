@@ -1,4 +1,5 @@
 import express from 'express';
+import dbConnectionConfig from './config/dbconfig';
 
 const app = express();
 const port = 3000;
@@ -10,6 +11,7 @@ app.get('/', (req, res) => {
 });
 
 
-app.listen(port, () => {
+app.listen(port, async () => {
   console.log(`Server is running on http://localhost:${port}`);
+  await dbConnectionConfig();
 });

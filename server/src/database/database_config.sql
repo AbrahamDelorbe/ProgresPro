@@ -1,3 +1,3 @@
-CREATE DATABASE progressPro;
+CREATE DATABASE progresspro;
 
 
