@@ -7,7 +7,7 @@ import { ButtonProps as MUIButtonProps } from '@mui/material/Button';
 interface ButtonProps extends Omit<MUIButtonProps, 'variant'> {
   text: string;
   color?: MUIButtonProps['color'];
-  variant?: MUIButtonProps['variant'];
+  variant?: "contained" | "text" | "outlined";
 }
 
 type ButtonGroupProps = {
