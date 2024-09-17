@@ -1,5 +1,5 @@
 import pg from "pg";
-import { areVariablesDefined } from "../helpers";
+import { areEnvVariablesDefined } from "../helpers";
 
 async function dbConnectionConfig() {
   try {
@@ -8,7 +8,7 @@ async function dbConnectionConfig() {
     const { DB_HOST, DB_NAME, DB_PASSWORD, DB_USER } = process.env;
 
     
-    const areEnvVariablesValid = areVariablesDefined(DB_HOST, DB_NAME, DB_PASSWORD, DB_USER)
+    const areEnvVariablesValid = areEnvVariablesDefined(DB_HOST, DB_NAME, DB_PASSWORD, DB_USER)
 
     if (!areEnvVariablesValid) {
         throw new Error('One or more environment variables are missing or invalid');

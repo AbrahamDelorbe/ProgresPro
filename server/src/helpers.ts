@@ -1,4 +1,4 @@
-export const areVariablesDefined = (
+export const areEnvVariablesDefined = (
   ...vars: (string | undefined | null)[]
 ): boolean => {
   return vars.every(
