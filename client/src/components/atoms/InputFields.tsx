@@ -10,10 +10,10 @@ type FullWidthInputPros = {
   label?: string;
 }
 
-export default function FullWidthInputField({ width, maxWidth, id, label }: FullWidthInputPros) {
+export default function FullWidthInputField({ width, maxWidth, id, label, ...rest }: FullWidthInputPros) {
   return (
     <Box sx={{ width: width, maxWidth: maxWidth }}>
-      <TextField fullWidth label={label} id={id} />
+      <TextField fullWidth label={label} id={id} {...rest}/>
     </Box>
   );
 }

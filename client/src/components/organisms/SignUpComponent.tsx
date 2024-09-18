@@ -2,6 +2,7 @@ import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
+import { useState } from 'react';
 
 import Text from "../atoms/Text";
 import FullWidthInputField from '../atoms/InputFields';
@@ -18,6 +19,14 @@ const commonStyles = {
 };
 
 export default function SignUpComponent() {
+    const [signUpForm, setSignUpForm] = useState({
+        name: "",
+        lastName: "",
+        email: "",
+        password: "",
+        confirmPassword: ""
+    });
+
     return (
         <React.Fragment>
             <CssBaseline />

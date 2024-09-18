@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import { ButtonProps as MUIButtonProps } from '@mui/material/Button';
 
-// Extend MUI ButtonProps to include custom props if needed
+
 interface ButtonProps extends Omit<MUIButtonProps, 'variant'> {
   text: string;
   color?: MUIButtonProps['color'];
@@ -15,8 +15,8 @@ type ButtonGroupProps = {
 }
 
 // Fix varient typings
-export default function ButtonComponent({ text, onClick, color, varient }: ButtonProps) {
-  return <Button onClick={onClick} color={color} variant={varient} >{text}</Button>;
+export default function ButtonComponent({ text, onClick, color, variant }: ButtonProps) {
+  return <Button onClick={onClick} color={color} variant={variant} >{text}</Button>;
 }
 
 
