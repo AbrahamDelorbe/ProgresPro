@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "nodemon",
-    "postgre": "docker compose up -d"
+    "watch": "nodemon",
+    "start:dev": "docker compose up -d",
+    "stop:dev": "docker compose down",
+    "postgres:logs": "docker compose logs"
   },
   "keywords": [],
   "author": "",

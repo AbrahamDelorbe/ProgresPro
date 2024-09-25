@@ -4,6 +4,5 @@ CREATE TABLE Role (
     [description] NVARCHAR (25),
      see_process BOOLEAN,
      comment_process  BOOLEAN,
-     create_project   BOOLEAN,
-     
+     create_project   BOOLEAN,    
 )

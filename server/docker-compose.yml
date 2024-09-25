@@ -1,30 +1,31 @@
-version: '3.1'
-
+version: "3.8"
 services:
-
-  postgres:
-    image: postgres:latest
-    container_name: postgres
-    environment:
-      POSTGRES_USER: postgre
-      POSTGRES_PASSWORD: 123456789
-      POSTGRES_DB: progresspro
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
+  db:
+    image: postgres
+    container_name: postgre_db
+    restart: always
     ports:
       - "5432:5432"
-
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456789
+    volumes:
+      - local_pgdata:/var/lib/postgresql/data
   pgadmin:
-    image: dpage/pgadmin4:latest
-    container_name: pgadmin_container
+    image: dpage/pgadmin4
+    container_name: pgadmin4
+    restart: always
+    ports:
+      - "8888:80"
     environment:
       PGADMIN_DEFAULT_EMAIL: manuelreyesjimenez11@gmail.com
-      PGADMIN_DEFAULT_PASSWORD: admin
-    ports:
-      - "80:80"
-    depends_on:
-      - postgres
+      PGADMIN_DEFAULT_PASSWORD: 123456789
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
 
 volumes:
-  postgres_data:
+  local_pgdata:
+  pgadmin-data:
+
+
 
