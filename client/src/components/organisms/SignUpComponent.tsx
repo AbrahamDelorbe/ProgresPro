@@ -52,7 +52,7 @@ export default function SignUpComponent() {
         }));
     }
 
-    // Convert the following in a switch case
+    
     const validateForm = () => {
         const newErrors: FormErrors = {};
         if (!signUpForm.name) newErrors.name = 'Name is required';
